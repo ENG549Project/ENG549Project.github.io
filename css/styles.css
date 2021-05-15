@@ -2,15 +2,65 @@ html{
     padding: 0px 40px 0px 40px;
     background-color: #ECE9D8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+    overflow-y:hidden;
 }
 body{
+    width:90%;
+    height: 100%;
+    margin:auto;
+}
+.mainD{
     background-color: white;
-    padding-top: -200px;
+    height: 50%;
+    overflow: scroll;
+    overflow-x:hidden;
 }
 h1 {
     background-color: #0055E6;
+    text-align: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span{
+    text-align: right;
+  
+}
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement
+{
+    border-width:0px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 10px solid red;
+    
+  border-color: #475E83 transparent;
+  background-color:#C0D4FB;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover
+{
+    border-color: #475E83 transparent transparent transparent;
+}
+
+
+/* Down */
+::-webkit-scrollbar-button:vertical:increment
+{
+    border-top:0px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-top: 10px solid red;
+    
+  border-color: #475E83 transparent;
+  background-color:#C0D4FB;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover
+{
+  border-color: #475E83 transparent transparent transparent;
 }
 
 ::-webkit-scrollbar {
@@ -24,8 +74,8 @@ h1 {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(10, 177, 228);
-    border-radius: 20px
+    background: #C0D4FB;
+    border-radius: 10px
   }
   
   /* Handle on hover */
